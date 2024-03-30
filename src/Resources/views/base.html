@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            <link rel="stylesheet" href="style.css"/>
+            <title>{% block title %}{% endblock %} - Optimy Test</title>
+        {% endblock %}
+    </head>
+    <body>
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">
+            {% block footer %}
+                &copy; Copyright 2024 by <a href="http://optimy.test/">Optimy Test</a>.
+            {% endblock %}
+        </div>
+    </body>
+</html>

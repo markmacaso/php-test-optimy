@@ -1,0 +1,7 @@
+{% for item in news %}
+############ NEWS {{ item.id }}: {{ item.title }} ############
+{{ item.body }}
+{% for comment in item.getComments() %}
+Comment {{ comment.id }} : {{ comment.body }}
+{% endfor %}
+{% endfor %}
