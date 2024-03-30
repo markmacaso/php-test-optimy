@@ -25,3 +25,19 @@
     php index.php --news-delete news_id=[news_id]<br>
     Example:<br>
     php index.php --news-delete news_id=10<br>
+  - Show comments of a news: <br>
+    php index.php --comments news_id=[news_id]<br>
+    Example:<br>
+    php index.php --comments news_id=1<br>
+  - Show a comment: <br>
+    php index.php --comment comment_id=[comment_id]<br>
+    Example:<br>
+    php index.php --comment comment_id=1<br>
+  - Add a comment:<br>
+    php index.php --comment-add news_id=[news_id] body=[body]<br>
+    Example:<br>
+    php index.php --comment-add news_id=1 body="new comment"<br>
+  - Delete a comment:<br>
+    php index.php --comment-delete comment_id=[comment_id]<br>
+    Example:<br>
+    php index.php --comment-delete comment_id=1<br>
