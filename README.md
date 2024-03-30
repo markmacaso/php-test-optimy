@@ -11,17 +11,17 @@
 
 ## 2. Commands
 
-  - Show all news and comments:
-    php index.php
-  - Show a  news and comments: 
-    php index.php --news news_id=[news_id]
-    Example:
-    php index.php --news news_id=1
-  - Add a news:
-    php index.php --news-add title=[title] body=[body]
-    Example:
-    php index.php --news-add title="This is a news" body="Description of the news"
-  - Delete a news:
-    php index.php --news-delete news_id=[news_id]
-    Example:
-    php index.php --news-delete news_id=10
+  - Show all news and comments: <br>
+    php index.php<br>
+  - Show a  news and comments: <br>
+    php index.php --news news_id=[news_id]<br>
+    Example:<br>
+    php index.php --news news_id=1<br>
+  - Add a news:<br>
+    php index.php --news-add title=[title] body=[body]<br>
+    Example:<br>
+    php index.php --news-add title="This is a news" body="Description of the news"<br>
+  - Delete a news:<br>
+    php index.php --news-delete news_id=[news_id]<br>
+    Example:<br>
+    php index.php --news-delete news_id=10<br>
