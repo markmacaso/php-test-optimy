@@ -1,4 +1,4 @@
-############ NEWS {{ news.title }} ############
+############ NEWS {{ item.id }} : {{ news.title }} ############
 {{ news.body }}
 {% for comment in news.getComments() %}
 Comment {{ comment.id }} : {{ comment.body }}
