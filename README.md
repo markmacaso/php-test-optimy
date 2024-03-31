@@ -41,3 +41,23 @@
     php index.php --comment-delete comment_id=[comment_id]<br>
     Example:<br>
     php index.php --comment-delete comment_id=1<br>
+
+## 3. Architecture
+
+  - index.php <br>
+    Entry point of the application.
+  - composer.json <br>
+    Contain project properties and package dependencies
+  - config (directory) <br>
+    Config files  <br>
+    app.php: Application configurations  <br>
+    database.php: Database connection configurations  <br>
+  - database (directory) <br>
+    Contain sql files
+  - routes (directory) <br>
+    Contain definition of routes
+  - src (directory) <br>
+    Contain the application logic
+  - src/Controllers (directory) <br>
+    Contain the controller classes that handle the requests
+  - 
