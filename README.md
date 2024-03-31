@@ -58,6 +58,26 @@
     Contain definition of routes
   - src (directory) <br>
     Contain the application logic
-  - src/Controllers (directory) <br>
+  - src/Bootstrap.php
+    Include the class files
+    Initialize the kernel to handle the request
+  - src/Controllers (directory)
     Contain the controller classes that handle the requests
-  - 
+  - src/Database (directory)
+    Contain database connection classes.
+  - src/Handlers (directory)
+    Contain classes that handle different functions
+  - src/Helpers (directory)
+    Contain helper classes
+  - src/Kernel (directory)
+    Contain the kernel classes
+  - src/Models (directory)
+    Contain the model classes
+  - src/Providers (directory)
+    Contain the provider classes
+  - src/Requests (directory)
+    Contain the request classes
+  - src/Resources (directory)
+    Contain the html/text files
+  - src/Traits (directory)
+    Contain the traits
