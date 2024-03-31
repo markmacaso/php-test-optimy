@@ -1,6 +1,10 @@
 # PHP test
 
-## 1. Installation
+## 1. Requirements
+
+  - php version 8.1.0
+
+## 2. Installation
 
   - create an empty database named "phptest" on your MySQL server
   - (new) copy config/app.php.dev to config/app.php
@@ -9,7 +13,7 @@
   - go to your shell and run database initialization: "php index.php --db-init"
   - you can test the demo script in your shell: "php index.php"
 
-## 2. Commands
+## 3. Commands
 
   - Show all news and comments: <br>
     php index.php<br>
@@ -42,7 +46,7 @@
     Example:<br>
     php index.php --comment-delete comment_id=1
 
-## 3. Architecture
+## 4. Architecture
 
   - index.php <br>
     Entry point of the application.
