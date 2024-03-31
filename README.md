@@ -40,7 +40,7 @@
   - Delete a comment:<br>
     php index.php --comment-delete comment_id=[comment_id]<br>
     Example:<br>
-    php index.php --comment-delete comment_id=1<br>
+    php index.php --comment-delete comment_id=1
 
 ## 3. Architecture
 
@@ -51,7 +51,7 @@
   - config (directory) <br>
     Config files  <br>
     app.php: Application configurations  <br>
-    database.php: Database connection configurations  <br>
+    database.php: Database connection configurations
   - database (directory) <br>
     Contain sql files
   - routes (directory) <br>
