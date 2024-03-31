@@ -1,20 +1,20 @@
 <?php declare(strict_types = 1);
 
-namespace OptimyTest\Bootstrap;
+namespace OptimyTest\Kernel;
 
-use Symfony\Component\HttpFoundation\Request;
+use OptimyTest\Requests\ConsoleRequest;
 
 /**
- * Bootstrap provider class
+ * Console kernel class
  */
-class HttpBootstrap extends AbstractBootstrap
+class Console extends AbstractKernel
 {
     /**
      * @inheritDoc
      */
     public function initialize($arguments)
     {
-        $this->request = new Request(
+        $this->request = new ConsoleRequest(
             $_GET,
             $_POST,
             [],
@@ -22,5 +22,7 @@ class HttpBootstrap extends AbstractBootstrap
             $_FILES,
             $_SERVER
         );
+
+        $this->request->initializeCli($arguments);
     }
 }

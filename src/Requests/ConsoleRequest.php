@@ -7,15 +7,15 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * CliRequest class
  */
-class CliRequest extends Request
+class ConsoleRequest extends Request
 {
     /**
      * Initialize cli request
      *
      * @param  array $arguments
-     * @return CliRequest
+     * @return ConsoleRequest
      */
-    public function initializeCli($arguments) : CliRequest
+    public function initializeCli($arguments) : ConsoleRequest
     {
         $action = isset($arguments[1]) ? $arguments[1] : '--';
 

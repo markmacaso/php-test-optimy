@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace OptimyTest\Bootstrap;
+namespace OptimyTest\Kernel;
 
 use FastRoute\Dispatcher;
 use OptimyTest\Handlers\ErrorHandler;
@@ -12,7 +12,7 @@ use Twig\Environment;
 /**
  * Bootstrap provider class
  */
-abstract class AbstractBootstrap
+abstract class AbstractKernel
 {
     /**
      * @var RouteProvider

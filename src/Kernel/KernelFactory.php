@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace OptimyTest\Bootstrap;
+namespace OptimyTest\Kernel;
 
 use OptimyTest\Handlers\ErrorHandler;
 use OptimyTest\Providers\RouteProvider;
@@ -10,10 +10,13 @@ use Twig\Loader\FilesystemLoader;
 /**
  * Bootstrap factory class
  */
-class BootstrapFactory
+class KernelFactory
 {
     /**
      * Get the bootstrap
+     *
+     * @param  array $settings
+     * @return AbstractKernel
      */
     public static function get($settings)
     {
@@ -48,13 +51,13 @@ class BootstrapFactory
             ]
         );
 
-        $bootstrap = new $settings['class'](
+        $kernel = new $settings['class'](
             $templater,
             $routeProvider,
             $errorHandler,
             $settings['arguments']
         );
 
-        return $bootstrap;
+        return $kernel;
     }
 }
